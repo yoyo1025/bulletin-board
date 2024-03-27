@@ -27,14 +27,47 @@ h2 {
 }
 
 ul {
-  margin: 0; /*余白をリセット*/
-  padding: 0; /*余白をリセット*/
-  list-style-type: none; /*マーカーを削除*/
-  border-top: solid 1px #000000; /*枠線・上*/
+  margin: 0; 
+  padding: 0; 
+  list-style-type: none; 
+  border-top: solid 1px #000000; 
  }
+
  ul li {
   font-size: 1.8rem;
-  padding: 10px 20px; /*余白*/
-  background: #dfeaea; /*背景色*/
-  border-bottom: solid 1px #000000; /*枠線・下*/
+  padding: 10px 20px; 
+  background: #dfeaea; 
+  border-bottom: solid 1px #000000; 
+ }
+
+ .thread-input-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  margin: auto;
+  width: 600px; 
+}
+
+.create-new-thread input {
+  flex-grow: 1; 
+  margin-right: 10px; 
+  padding: 15px;
+}
+
+
+ .create-new-thread a {
+  font-size: 1.2rem;;
+ }
+
+ .create-new-thread button {
+  color: #ffffff;
+  font-size: 1.3rem;
+  text-align: center;
+  display: flex;
+  background: rgb(90, 211, 156);
+  padding-top: 7px;
+  padding-bottom: 7px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: auto;
  }
