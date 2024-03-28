@@ -15,7 +15,7 @@ function App() {
           <Route path="/thread/new" element={<CreateNewThread newThreadTitle={newThreadTitle} setNewThreadTitle={setNewThreadTitle} />}></Route>
           {threadList.map((thread) => {
             return (
-              <Route key={thread.id} path={`/thread/${thread.id}`} element={<Thread threadTitle={thread.title}/>}></Route>
+              <Route key={thread.id} path={`/thread/${thread.id}`} element={<Thread threadTitle={thread.title} threadId={thread.id}/>}></Route>
             )
           })}
         </Routes>

@@ -71,3 +71,26 @@ ul {
   padding-right: 20px;
   margin: auto;
  }
+
+ .create-new-content input {
+  flex-grow: 1; 
+  margin-right: 10px; 
+  padding: 15px;
+}
+
+.create-new-content a {
+  font-size: 1.2rem;;
+ }
+
+ .create-new-content button {
+  color: #ffffff;
+  font-size: 1.3rem;
+  text-align: center;
+  display: flex;
+  background: rgb(90, 211, 156);
+  padding-top: 7px;
+  padding-bottom: 7px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: auto;
+ }
