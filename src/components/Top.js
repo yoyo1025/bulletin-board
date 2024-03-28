@@ -3,9 +3,8 @@ import "../App.css";
 import axios from 'axios';
 import { Header } from "./Header";
 
-export const Top = () => {
-    const [threadList, setThreadList] = useState([{id: "", title: ""}]);
-
+export const Top = ({threadList, setThreadList}) => {
+    
     useEffect(() => {
         axios.get('https://railway.bulletinboard.techtrain.dev/threads')
             .then(res => {

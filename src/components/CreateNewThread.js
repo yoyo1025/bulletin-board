@@ -3,8 +3,7 @@ import { useState, useEffect } from "react";
 import axios from 'axios';
 import "../App.css";
 
-export const CreateNewThread = () => {
-    const [newThreadTitle, setNewThreadTitle] = useState("");
+export const CreateNewThread = ({newThreadTitle, setNewThreadTitle}) => {
 
     const sendNewThread = (event) => {
         event.preventDefault(); 
