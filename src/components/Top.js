@@ -19,7 +19,7 @@ export const Top = () => {
             <h2>新着スレッド</h2>
             {threadList.map((thread) => (
                 <ul key={thread.id}>
-                    <li>{thread.title}</li>
+                    <li><a href={`/thread/${thread.id}`} >{thread.title}</a></li>
                 </ul>
             ))}
         </>
