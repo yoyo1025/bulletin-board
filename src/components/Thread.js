@@ -14,16 +14,14 @@ export const Thread = ({ threadTitle, threadId }) => {
           console.log(res.data);
           setContents(res.data.posts); 
         });
-  }, [threadId]);
+  }, []);
 
   const sendNewContent = (event) => {
-    event.preventDefault(); // フォーム送信のデフォルト動作を阻止
+    event.preventDefault();
     axios.post(`https://railway.bulletinboard.techtrain.dev/threads/${threadId}/posts`, { post: newPostText })
       .then(response => {
         console.log(response.data);
-        // 新しい投稿を posts ステートに追加
         setContents([...contents, response.data]);
-        // 入力フィールドをクリア
         setNewPostText("");
       })
       .catch(error => console.error(error));
@@ -34,9 +32,9 @@ export const Thread = ({ threadTitle, threadId }) => {
       <Header />
       <h2>{threadTitle}</h2> 
       <hr/>
-      {contents.map((post, index) => (
+      {contents.map((content, index) => (
         <ul key={index}>
-          <li>{post.post}</li>
+          <li>{content.post}</li>
         </ul>
       ))}
       <hr/>

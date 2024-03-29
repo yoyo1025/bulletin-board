@@ -17,7 +17,7 @@ export const Top = ({ threadList, setThreadList }) => {
             <h2>新着スレッド</h2>
             {threadList.map((thread) => (
                 <ul key={thread.id}>
-                    <li><Link to={`/thread/${thread.id}`}>{thread.title}</Link></li>
+                    <label><li><Link to={`/thread/${thread.id}`}>{thread.title}</Link></li></label>
                 </ul>
             ))}
         </>
